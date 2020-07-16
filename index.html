@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>WeRateDogs Submission Form</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="container">
+            <div class="main-form">
+                <h1 id="title">  We Rate Dogs&trade; Submission </h1> 
+                <p id="description"> Send Us your Application so we can rate your dog and post on the Twitter feed <a href="https://twitter.com/dog_rates">here</a>
+                
+                <form id="survey-form" action="/cooliest-form">
+                    <div class="form-list clearfix" >
+                  <h4> Contact Info </h4>
+                    <ul class="left-side" >
+                      <li> 		
+                        <label id="name-label"> Name </label> 
+                         <input type="text" name="name" id="name" placeholder="Enter your name" required>
+                      </li>
+                      <li> 		
+                        <label id="email-label">Email </label> 
+                          <input type = "email" id = "email" required placeholder = "Email" />
+                      </li>
+                       <li> 		
+                         <label id="number-label">Phone Number </label> 
+                          <input type = "number" id="number" min="0" max="9" pattern="^[0-9\-\+\s\(\)]*$" placeholder = "Phone Number" style="width: 57%" />
+                       </li>
+                      <li>
+                        <label> Twitter Handle </label> 
+                         <input type="text" placeholder="@yourhandle"/>
+                      </li>
+                      <li> 
+                        <label> Your Dog's Name</label> 
+                         <input type = "text" placeholder ="your pupperito's name"/>
+                      </li>
+                    </ul>     
+                </div>
+                    
+                     
+                <div class="gender-select clearfix">
+                  <h4> Gender </h4>
+                   <input type="radio" name="gender" value="male" > Male<br>
+                   <input type="radio" name="gender" value="female" > Female<br>
+                   <input type="radio" name="gender" value="any"  checked> Does It Matter?<br>
+                </div>
+                
+                
+                <div class="options">
+                  <h4> Color of Coat </h4>
+                   <input type="checkbox" name="brown" value="brown"> Brown<br>
+                   <input type="checkbox" name="blonde" value="blonde" > Blonde<br>
+                   <input type="checkbox" name="white" value="white" > White<br>
+                   <input type="checkbox" name="gray" value="gray" >Gray<br>
+             
+                
+                <h4> What do you usually call them? </h4>
+                  <select id="dropdown">
+                    <option value="pupper">Pupper</option>
+                    <option value="doggo">Doggo</option>
+                    <option value="floof">Floof</option>
+                    <option value="the-most-amazing-thing-ever">The Most Amazing Thing Ever</option>
+                  </select>
+                </div>
+            
+                <div class="comments-field ">
+                  <p> Leave a blurb to go along with your submission</p>
+                  <textarea id="comments"></textarea>
+                    <button id="submit">Submit </button>
+                </div>
+                
+               
+                </form>
+            </div>
+            
+            </div>
+        
+        <script src="" async defer></script>
+    </body>
+</html>

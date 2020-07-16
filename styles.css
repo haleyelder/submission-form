@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    background-color: lightgray;
+  }
+  
+  
+  
+  #title, #description {
+    text-align: center;
+  }
+  
+  #title {
+    padding-top: 20px;
+  }
+  
+  #survey-form input {
+    margin: 0 auto;
+  
+  }
+  
+  .form-list {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .left-side {
+    float: left;
+    margin: 10px;
+  }
+  ul li input {
+    float:right;
+    margin-left: 20px !important;
+  }
+  .left-side li {
+    padding-bottom: 2px;
+  }
+  
+  ul li {
+      list-style-type: none;
+  }
+  
+  .gender-select, #dropdown, .options, .comments-field {
+    float: left;
+    width:45%;
+    margin-left: 20%;
+  
+  }
+  .comments-field {
+    text-align: center;
+    margin-top: 20px;
+  }
+  #comments {
+    padding: 15px 0;
+    width: 100%;
+  }
+  #submit {
+    width: 75%;
+  }
+  
