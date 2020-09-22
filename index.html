@@ -10,16 +10,93 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./styles.css">
+        <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+   
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+            
     </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+    <main>
+        <header>
+          <h2> WeRateDogs&reg; Submission</h2>
+          <p>Submit the form below to possibly be featured on the WeRateDogs <a href="https://twitter.com/dog_rates">Twitter feed!</a></p>
+        </header>
+        <!-- <nav></nav> -->
+        <section>
+            <form>
+                <h3>Contact Information</h3>
+                <section class="contact-info">
+                    <label>Name
+                        <input class="contact-info" type="text" name="contact-name" placeholder="enter your name" required/>
+                    </label>
+                    <label>Email Address
+                        <input class="contact-info" type="text" name="contact-mail" placeholder="name@domain.com" required/>
+                    </label>
+                    <label>Phone Number
+                        <input class="contact-info" type="text" name="contact-phone" placeholder="555-555-5555" required/>
+                    </label>
+                    <label>Twitter Handle
+                        <input class="contact-info" type="text" name="contact-twitter" placeholder="@youraccount" required/>
+                    </label>
+                </section>
+                <section class="gender-info">
+                    <h3>Dog Gender</h3>
+                    <label>Male</label>
+                    <input class="gender-choice" type="radio" name="gender" value="male" > 
+                    <label>Female</label>
+                    <input  class="gender-choice" type="radio" name="gender" value="female" > 
+                    <label>Does It Matter?</label>
+                    <input class="gender-choice"  type="radio" name="gender" value="any"  checked> 
+                </section>
+                <section class="coat-color">
+                    <h3>Coat Color</h3>
+                    <label>Brown</label>
+               
+
+
+                    <input type="checkbox" name="brown" value="brown"> Brown<br>
+
+
+                </section>
+            </form>
+
+            <form>  <div class="row">
+              <form class="col s12">
+                <div class="row">
+                  <div class="input-field col s6">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input id="icon_prefix" type="text" class="validate">
+                    <label for="icon_prefix">First Name</label>
+                  </div>
+                  <div class="input-field col s6">
+                    <i class="material-icons prefix">phone</i>
+                    <input id="icon_telephone" type="tel" class="validate">
+                    <label for="icon_telephone">Telephone</label>
+                  </div>
+                </div>
+                <div class="input-field col s12">
+                  <input id="email" type="email" class="validate">
+                  <label for="email">Email</label>
+                  <span class="helper-text" data-error="wrong" data-success="right">Helper text</span>
+                </div>
+              </form>
+            </div></form>
+        </section>
+        
+      </main>
+  
+  
+      
+      <footer>
+        &copy; 2020 | Haley Elder
+      </footer>
+       <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<!--   
 
         <div class="container">
             <div class="main-form">
-                <h1 id="title">  We Rate Dogs&trade; Submission </h1> 
-                <p id="description"> Send Us your Application so we can rate your dog and post on the Twitter feed <a href="https://twitter.com/dog_rates">here</a>
                 
                 <form id="survey-form" action="/cooliest-form">
                     <div class="form-list clearfix" >
@@ -84,8 +161,7 @@
                 </form>
             </div>
             
-            </div>
+            </div> -->
         
-        <script src="" async defer></script>
-    </body>
+ 
 </html>
