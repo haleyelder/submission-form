@@ -1,7 +1,7 @@
 # survey-form
 
 Goals 
-[] - Accesssibility practice 
+- [ ] Accesssibility practice 
     - resources/guides
         - https://digital.gov/resources/introduction-accessibility/
         - http://web-accessibility.carnegiemuseums.org/code/forms/
@@ -11,5 +11,5 @@ Goals
     - touch/keyboard (tabbing, mobile type)
     - screenreaders
     - semantic
-[] - light house testing
-[] - materialize practice
+- [ ] light house testing
+- [ ] materialize practice
