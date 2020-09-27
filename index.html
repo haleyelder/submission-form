@@ -17,7 +17,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
             
     </head>
-    <main>
+    <main class="container">
         <header>
           <h2> WeRateDogs&reg; Submission</h2>
           <p>Submit the form below to possibly be featured on the WeRateDogs <a href="https://twitter.com/dog_rates">Twitter feed!</a></p>
@@ -25,143 +25,72 @@
         <!-- <nav></nav> -->
         <section>
             <form>
-                <h3>Contact Information</h3>
+                <h4>Contact Information</h4>
                 <section class="contact-info">
-                    <label>Name
-                        <input class="contact-info" type="text" name="contact-name" placeholder="enter your name" required/>
-                    </label>
-                    <label>Email Address
-                        <input class="contact-info" type="text" name="contact-mail" placeholder="name@domain.com" required/>
-                    </label>
-                    <label>Phone Number
-                        <input class="contact-info" type="text" name="contact-phone" placeholder="555-555-5555" required/>
-                    </label>
-                    <label>Twitter Handle
-                        <input class="contact-info" type="text" name="contact-twitter" placeholder="@youraccount" required/>
-                    </label>
+                  <label for="firstname">First Name:</label> 
+                  <input id="firstname" type="text" placeholder="enter your first name" autocomplete="firstname" aria-required="true" required>
+
+                  <label for="lastname">Last Name:</label> 
+                  <input id="lastname" type="text" placeholder="enter your last name" autocomplete="lastname" aria-required="true" required>           
+
+                  <label for="email">Email Address:</label> 
+                  <input id="email" type="text" placeholder="name@domain.com" autocomplete="email" aria-required="true" required> 
+
+                  <label for="icon_telephone">Phone Number:</label> 
+                  <input id="telephone" tel="tel" type="text" placeholder="555-555-5555" autocomplete="telephone" aria-required="true" required> 
+
+                  <label for="twitter-social">Twitter Handle</label> 
+                  <input id="twitter-social" type="text" placeholder="@youraccount" aria-required="true" required>   
+
                 </section>
+
+                <!-- disabled but obvious -->
+
                 <section class="gender-info">
-                    <h3>Dog Gender</h3>
-                    <label>Male</label>
-                    <input class="gender-choice" type="radio" name="gender" value="male" > 
-                    <label>Female</label>
-                    <input  class="gender-choice" type="radio" name="gender" value="female" > 
-                    <label>Does It Matter?</label>
-                    <input class="gender-choice"  type="radio" name="gender" value="any"  checked> 
+                    <h4>Dog Gender</h4>
+                    <fieldset>
+                      <legend>Choose one:</legend>
+                   
+                      <label>
+                        <input class="with-gap" name="male" type="radio" value="male" disabled="disabled" />
+                        <span>Male</span>
+                      </label>
+
+                    
+                      <label>
+                        <input class="with-gap" name="female" type="radio" value="female" disabled="disabled" />
+                        <span>Female</span>
+                      </label>
+
+                      <label>
+                        <input class="with-gap" name="doesitmatter" type="radio" value="doesitmatter" />
+                        <span>Does It Matter?</span>
+                      </label>
+                     </fieldset>
+
                 </section>
+
                 <section class="coat-color">
-                    <h3>Coat Color</h3>
-                    <label>Brown</label>
-               
-
-
-                    <input type="checkbox" name="brown" value="brown"> Brown<br>
-
-
+                    <h4>Coat Color</h4>
+                    <fieldset>
+                      <legend>Select max two colors:</legend>
+                        
+                        <label for="black"><input id="black" type="checkbox" name="coat-color" value="black">Black</label><br>    
+                       
+                        <label for="brown"> <input id="brown" type="checkbox" name="coat-color" value="brown">Brown</label><br>    
+                       
+                        <label for="red"> <input id="red" type="checkbox" name="coat-color" value="red">Red</label><br>
+                     </fieldset>
+    
                 </section>
             </form>
-
-            <form>  <div class="row">
-              <form class="col s12">
-                <div class="row">
-                  <div class="input-field col s6">
-                    <i class="material-icons prefix">account_circle</i>
-                    <input id="icon_prefix" type="text" class="validate">
-                    <label for="icon_prefix">First Name</label>
-                  </div>
-                  <div class="input-field col s6">
-                    <i class="material-icons prefix">phone</i>
-                    <input id="icon_telephone" type="tel" class="validate">
-                    <label for="icon_telephone">Telephone</label>
-                  </div>
-                </div>
-                <div class="input-field col s12">
-                  <input id="email" type="email" class="validate">
-                  <label for="email">Email</label>
-                  <span class="helper-text" data-error="wrong" data-success="right">Helper text</span>
-                </div>
-              </form>
-            </div></form>
-        </section>
-        
+        </section>     
       </main>
-  
-  
+   
       
       <footer>
-        &copy; 2020 | Haley Elder
+         <span>&copy; 2020 | Haley Elder </span>
       </footer>
-       <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-<!--   
 
-        <div class="container">
-            <div class="main-form">
-                
-                <form id="survey-form" action="/cooliest-form">
-                    <div class="form-list clearfix" >
-                  <h4> Contact Info </h4>
-                    <ul class="left-side" >
-                      <li> 		
-                        <label id="name-label"> Name </label> 
-                         <input type="text" name="name" id="name" placeholder="Enter your name" required>
-                      </li>
-                      <li> 		
-                        <label id="email-label">Email </label> 
-                          <input type = "email" id = "email" required placeholder = "Email" />
-                      </li>
-                       <li> 		
-                         <label id="number-label">Phone Number </label> 
-                          <input type = "number" id="number" min="0" max="9" pattern="^[0-9\-\+\s\(\)]*$" placeholder = "Phone Number" style="width: 57%" />
-                       </li>
-                      <li>
-                        <label> Twitter Handle </label> 
-                         <input type="text" placeholder="@yourhandle"/>
-                      </li>
-                      <li> 
-                        <label> Your Dog's Name</label> 
-                         <input type = "text" placeholder ="your pupperito's name"/>
-                      </li>
-                    </ul>     
-                </div>
-                    
-                     
-                <div class="gender-select clearfix">
-                  <h4> Gender </h4>
-                   <input type="radio" name="gender" value="male" > Male<br>
-                   <input type="radio" name="gender" value="female" > Female<br>
-                   <input type="radio" name="gender" value="any"  checked> Does It Matter?<br>
-                </div>
-                
-                
-                <div class="options">
-                  <h4> Color of Coat </h4>
-                   <input type="checkbox" name="brown" value="brown"> Brown<br>
-                   <input type="checkbox" name="blonde" value="blonde" > Blonde<br>
-                   <input type="checkbox" name="white" value="white" > White<br>
-                   <input type="checkbox" name="gray" value="gray" >Gray<br>
-             
-                
-                <h4> What do you usually call them? </h4>
-                  <select id="dropdown">
-                    <option value="pupper">Pupper</option>
-                    <option value="doggo">Doggo</option>
-                    <option value="floof">Floof</option>
-                    <option value="the-most-amazing-thing-ever">The Most Amazing Thing Ever</option>
-                  </select>
-                </div>
-            
-                <div class="comments-field ">
-                  <p> Leave a blurb to go along with your submission</p>
-                  <textarea id="comments"></textarea>
-                    <button id="submit">Submit </button>
-                </div>
-                
-               
-                </form>
-            </div>
-            
-            </div> -->
-        
- 
 </html>
